@@ -57,7 +57,7 @@ public class Main {
     public static void task6() {
         System.out.println("Задача 6");
 
-        for (int i =7; i<=98; i+=7){
+        for (int i = 7; i <= 98; i += 7) {
             System.out.println(i);
         }
     }
@@ -65,7 +65,7 @@ public class Main {
     public static void task7() {
         System.out.println("Задача 7");
 
-        for (int i=1; i <=512; i*=2 ){
+        for (int i = 1; i <= 512; i *= 2) {
             System.out.println(i);
         }
     }
@@ -73,14 +73,37 @@ public class Main {
     public static void task8() {
         System.out.println("Задача 8");
 
+        int deposit = 0;
+        int monthlyPayment = 29000;
+
+        for (int i = 1; i <= 12; i++) {
+            deposit = deposit + monthlyPayment;
+            System.out.println("Месяц " + i + " сумма накоплений равна " + deposit);
+        }
 
     }
 
     public static void task9() {
         System.out.println("Задача 9");
+
+        double deposit = 0;
+        int monthlyPayment = 29000;
+
+        for (int i = 1; i <= 12; i++) {
+            deposit = deposit + deposit * 0.01;
+            deposit = deposit + monthlyPayment;
+            System.out.printf("Месяц %d сумма накоплений равна %2f\n", i, deposit);
+        }
     }
 
     public static void task10() {
         System.out.println("Задача 10");
+
+        int cons = 2;
+
+        for (int i = 1; i <= 10; i++) {
+            int multi = cons * i;
+            System.out.println(cons + "*" + i + "=" + multi);
+        }
     }
 }
