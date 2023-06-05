@@ -92,7 +92,7 @@ public class Main {
         for (int i = 1; i <= 12; i++) {
             deposit = deposit + deposit * 0.01;
             deposit = deposit + monthlyPayment;
-            System.out.printf("Месяц %d сумма накоплений равна %2f\n", i, deposit);
+            System.out.printf("Месяц %d сумма накоплений равна %.2f\n", i, deposit);
         }
     }
 
